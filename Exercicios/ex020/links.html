@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links em CSS</title>
+    <style>
+       a:visited {
+        color: green;
+       } 
+       a:hover {
+        color: rgb(233, 31, 31);
+        text-decoration: underline;
+       }
+       a:active{
+        color: rgb(161, 4, 252);
+       }
+       .especial {
+        background-color: aquamarine;
+       }
+       .especial::before{
+        content: '✧';
+       }
+       .especial::after{
+        content: '⯎';
+       }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://music.youtube.com/watch?v=LF2LGaCsMbc&list=LMhttps://music.youtube.com/watch?v=LF2LGaCsMbc&list=LM" target="blank" class="especial">Youtube Music</a></li>
+        <li><a href="https://www.facebook.com/photo/?fbid=2727773114038479&set=ecnf.100004174507287" target="blank" class="especial">Facebook</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="blank" class="especial">Youtube</a></li>
+    </ul>
+</body>
+</html>
